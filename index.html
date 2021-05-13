@@ -1019,12 +1019,10 @@
 
 <body class="h-entry toc-inline">
 
-<p><a href="../../index.html"><img src="../../images/logo.gif" alt="CyberLibrarian" width="105" height="19" /></a></p>
+<p>【注意】 このドキュメントは、W3Cの<a class="link_out"  href="https://www.w3.org/TR/2020/REC-wot-thing-description-20200409/">Web of Things (WoT) Thing Description W3C Recommendation 9 April 2020</a>の和訳である。<br />
+このドキュメントの正式版はW3Cのサイト上にある英語版であり、このドキュメントには翻訳に起因する誤りがありえる。誤訳、誤植などのご指摘は、<a href="https://github.com/wot-jp-community/wot-thing-description/issues">翻訳チームのGitHub Issue</a>までお願いしたい。</p>
 
-<p>【注意】 このドキュメントは、W3Cの<a class="link_out"  href="https://www.w3.org/TR/2020/REC-wot-thing-description-20200409/">Web of Things (WoT) Thing Description W3C Recommendation 9 April 2020</a>の和訳です。<br />
-このドキュメントの正式版はW3Cのサイト上にある英語版であり、このドキュメントには翻訳に起因する誤りがありえます。誤訳、誤植などのご指摘は、<a href="../../mail.html">訳者</a>までお願い致します。</p>
-
-<p>First Update: 2020年06月19日</p>
+<p>First Update: 2020年06月19日 | Last Update: 2021年5月13日</p>
 
 <hr/>
 
@@ -1063,9 +1061,9 @@
   <dd><a href="https://github.com/w3c/wot-thing-description/issues">File a bug</a></dd>
 </dl>
 
-<p>公開以後に報告されたエラーや問題がないか<a href="https://w3c.github.io/wot-thing-description/errata.html"><strong>正誤表</strong></a>を確認していただきたい。</p>
+<p>公開以後に報告されたエラーや問題がないか<a href="https://w3c.github.io/wot-thing-description/errata.html"><strong>正誤表</strong></a>を確認のこと。</p>
 
-<p><a href="http://www.w3.org/2003/03/Translations/byTechnology?technology=wot-thing-description"><strong>翻訳版</strong></a>も参照していただきたい。</p>
+<p><a href="http://www.w3.org/2003/03/Translations/byTechnology?technology=wot-thing-description"><strong>翻訳版</strong></a>も参照のこと。</p>
 
 <p class="copyright"><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &#xa9; 2017-2020 <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>&#xae;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a> rules apply.</p>
 
@@ -1074,28 +1072,30 @@
 </div>
 <section id="abstract" class="introductory">
 
-<h2>要約</h2>
+<h2>概要</h2>
 
-<p>このドキュメントでは、<span class="mark">Web of Things (WoT) Thing Description</span>の形式モデルと共通表現について記述している。<span class="mark">Thing Description</span>では、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>のメタデータとインターフェースを記述する。このとき、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>とは、<span class="mark">Web of Things</span>に対して相互作用を提供し、<span class="mark">Web of Things</span>に加えられる、物理的または仮想的なエンティティーを抽象化したものである。<span class="mark">Thing Description</span>は、様々なデバイスを統合し、様々なアプリケーションの相互運用を可能にする小さな語彙に基づく一連の相互作用を提供する。デフォルトでは、<span class="mark">Thing Description</span>はJSON形式でエンコードされ、JSON-LDの処理も可能である。後者は、機械が理解できる方法で<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>に関する知識を表現するための強力な基盤を提供する。<span class="mark">Thing Description</span>のインスタンスは、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>自身が提供できる。あるいは、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>に資源上の制限がある場合(例えば、メモリ空間が限られている場合)や、<span class="mark">Web of Things</span>と互換性のある旧式デバイスが<span class="mark">Thing Description</span>で改造されている場合には外部で提供できる。</p>
+<p>この文書では、<span class="mark">Web of Things (WoT) Thing Description</span>の形式モデルと共通表現について記述している。<span class="mark">Thing Description</span>では、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>のメタデータとインターフェースを記述する。このとき、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>とは、<span class="mark">Web of Things</span>に対して相互作用を提供し、<span class="mark">Web of Things</span>に加えられる、物理的または仮想的なエンティティーを抽象化したものである。<span class="mark">Thing Description</span>は、様々なデバイスを統合し、様々なアプリケーションの相互運用を可能にする小さな語彙に基づく一連の相互作用を提供する。デフォルトでは、<span class="mark">Thing Description</span>はJSON形式でエンコードされ、JSON-LDの処理も可能である。後者は、機械が理解できる方法で<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>に関する知識を表現するための強力な基盤を提供する。<span class="mark">Thing Description</span>のインスタンスは、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>自身が提供できる。あるいは、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>に資源上の制限がある場合(例えば、メモリ空間が限られている場合)や、<span class="mark">Web of Things</span>と互換性のある旧式デバイスが<span class="mark">Thing Description</span>で改造されている場合には外部で提供できる。</p>
 
 </section>
 <section id="sotd" class="introductory">
 
-<h2>このドキュメントのステータス</h2>
+<h2>この文書のステータス</h2>
 
-<p><em>この項は、このドキュメントの公開時のステータスについて記述している。他のドキュメントがこのドキュメントに取って代わることがありえる。現行の<abbr title="World Wide Web Consortium">W3C</abbr>の刊行物およびこの技術報告の最新の改訂版のリストは、https://www.w3.org/TR/の<a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr>技術報告インデックス</a>にある。</em></p>
+<p><em>この項は、この文書の公開時のステータスについて記述している。他の文書がこの文書に取って代わることがありえる。現行の<abbr title="World Wide Web Consortium">W3C</abbr>の刊行物およびこの技術報告の最新の改訂版のリストは、https://www.w3.org/TR/の<a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr>技術報告インデックス</a>にある。</em></p>
 
-<p>このドキュメントは、<a href="https://www.w3.org/WoT/WG/">Web of Thingsワーキンググループ</a>によって勧告として公開された。</p>
+<p class="advisement">ステータスの更新 (2020年6月): (参加可能セクション中の) 「Commit history」へのリンクは、GitHubブランチの名称変更によりリンク切れになっていたため、2020年6月23日にin-placeで(=/TRエリアにあるHTMLを直接)修正された。</p>
 
-<p>この仕様の議論には<a href="https://github.com/w3c/wot-thing-description/issues">GitHubの課題</a>をお勧めする。または、メーリングリストにコメントを送信することもできる。コメントは<a href="mailto:public-wot-wg@w3.org">public-wot-wg@w3.org</a>(<a href="https://lists.w3.org/Archives/Public/public-wot-wg/">アーカイブ</a>)に送信していただきたい。</p>
+<p>この文書は、<a href="https://www.w3.org/WoT/WG/">Web of Thingsワーキンググループ</a>によって勧告として公開された。</p>
 
-<p>ワーキンググループの<a href="https://w3c.github.io/wot-thing-description/testing/report.html">実装報告書</a>を参照していただきたい。</p>
+<p>この仕様の議論には<a href="https://github.com/w3c/wot-thing-description/issues">GitHubのIssue</a>をお勧めする。または、メーリングリストにコメントを送信することもできる。コメントは<a href="mailto:public-wot-wg@w3.org">public-wot-wg@w3.org</a>(<a href="https://lists.w3.org/Archives/Public/public-wot-wg/">アーカイブ</a>)に送信いただきたい。</p>
 
-<p>このドキュメントは、<abbr title="World Wide Web Consortium">W3C</abbr>メンバー、ソフトウェア開発者、他の<abbr title="World Wide Web Consortium">W3C</abbr>グループ、および他の利害関係者によりレビューされ、<abbr title="World Wide Web Consortium">W3C</abbr>勧告として管理者の協賛を得た。これは確定済みドキュメントであり、参考資料として用いたり、別のドキュメントで引用することができる。勧告の作成における<abbr title="World Wide Web Consortium">W3C</abbr>の役割は、仕様に注意を引き付け、広範囲な開発を促進することである。これによってウェブの機能性および相互運用性が増強される。</p>
+<p>ワーキンググループの<a href="https://w3c.github.io/wot-thing-description/testing/report.html">実装報告書</a>を参照いただきたい。</p>
 
-<p>このドキュメントは、<a href="https://www.w3.org/Consortium/Patent-Policy/"><abbr title="World Wide Web Consortium">W3C</abbr>特許方針</a>の下で活動しているグループによって作成された。<abbr title="World Wide Web Consortium">W3C</abbr>は、このグループの成果物に関連する<a rel="disclosure" href="https://www.w3.org/2004/01/pp-impl/95969/status">あらゆる特許の開示の公開リスト</a>を維持し、このページには特許の開示に関する指示も含まれている。<a href="https://www.w3.org/Consortium/Patent-Policy/#def-essential">不可欠な請求権</a>(Essential Claim(s))を含んでいると思われる特許に関して実際に知っている人は、<a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure"><abbr title="World Wide Web Consortium">W3C</abbr>特許方針の6項</a>に従って情報を開示しなければならない。</p>
+<p>この文書は、<abbr title="World Wide Web Consortium">W3C</abbr>会員、ソフトウェア開発者、他の<abbr title="World Wide Web Consortium">W3C</abbr>グループ、および他の利害関係者によりレビューされ、ディレクターにより<abbr title="World Wide Web Consortium">W3C</abbr>勧告として承認されたものである。安定した文書であり、参考資料として用いること、別の文書で引用することができる。勧告の作成における<abbr title="World Wide Web Consortium">W3C</abbr>の役割は、その仕様への関心を引いて、広く普及させていくことにある。これにより、ウェブの機能および相互運用性の向上につながる。</p>
 
-<p>このドキュメントは、<a id="w3c_process_revision" href="https://www.w3.org/2019/Process-20190301/">2019年3月1日の<abbr title="World Wide Web Consortium">W3C</abbr>プロセスドキュメント</a>によって管理されている。</p>
+<p>この文書は、<a href="https://www.w3.org/Consortium/Patent-Policy/"><abbr title="World Wide Web Consortium">W3C</abbr>特許方針</a>の下で活動しているグループによって作成された。<abbr title="World Wide Web Consortium">W3C</abbr>は、このグループの成果物に関連する<a rel="disclosure" href="https://www.w3.org/2004/01/pp-impl/95969/status">あらゆる特許の開示の公開リスト</a>を維持し、このページには特許の開示に関する指示も含まれている。<a href="https://www.w3.org/Consortium/Patent-Policy/#def-essential">不可欠な請求権</a>(Essential Claim(s))を含んでいると思われる特許に関して実際に知っている人は、<a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure"><abbr title="World Wide Web Consortium">W3C</abbr>特許方針の6項</a>に従って情報を開示しなければならない。</p>
+
+<p>この文書は、<a id="w3c_process_revision" href="https://www.w3.org/2019/Process-20190301/">2019年3月1日の<abbr title="World Wide Web Consortium">W3C</abbr>プロセスドキュメント</a>に準拠している。</p>
 
 </section>
 <nav id="toc">
