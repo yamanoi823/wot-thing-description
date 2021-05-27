@@ -1302,9 +1302,9 @@
 }</code></pre>
 </aside>
 
-<p>このTDの例から、タイトルの<i>状態</i>を持つ一つの<a href="#propertyaffordance"><span class="mark">Propertyの</span>アフォーダンス</a>が存在することが分かる。さらに、(<code>forms</code> 構造内で<code>href</code>のメンバーによってアナウンスされる) <code>https://mylamp.example.com/status</code>というURIでGETメソッドを用いて (セキュアな形式の) HTTPプロトコルを介してこの<span class="mark">Property</span>にアクセスでき、文字列ベースの状態の値を返すということを示す情報が提供されている。GETメソッドの使用については明示的に述べられていないが、それは、この文書で定義しているデフォルト時の解釈 (default assumption) の一つである。</p>
+<p>このTDの例から、<i>status</i>というタイトルを持つ一つの<a href="#propertyaffordance"><span class="mark">Propertyの</span>アフォーダンス</a>が存在することが分かる。さらに、(<code>forms</code> 構造内で<code>href</code>メンバーによって示される) <code>https://mylamp.example.com/status</code>というURIでGETメソッドを用いて (セキュアな形式の) HTTPプロトコルを介してこの<span class="mark">Property</span>にアクセスでき、文字列ベースの状態の値を返すということを示す情報が提供されている。GETメソッドの使用については明示的に述べられていないが、それは、この文書で定義しているデフォルト時の解釈 (default assumption) の一つである。</p>
 
-<p>同様に、<code>https://mylamp.example.com/toggle</code>という資源でPOSTメソッドを用いてスイッチの状態を切り替える<a href="#actionaffordance"><span class="mark">Actionの</span>アフォーダンス</a>が指定されており、この場合も、POSTは<span class="mark">Action</span>を呼び出すためのデフォルト時の解釈である。</p>
+<p>同様に、<code>https://mylamp.example.com/toggle</code>というリソースでPOSTメソッドを用いてスイッチの状態を切り替える<a href="#actionaffordance"><span class="mark">Actionの</span>アフォーダンス</a>が指定されており、この場合も、POSTは<span class="mark">Action</span>を呼び出すためのデフォルト時の解釈である。</p>
 
 <p><a href="#eventaffordance"><span class="mark">Eventの</span>アフォーダンス</a>により、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>が非同期メッセージを送信するメカニズムが有効になる。ここでは、<code>https://mylamp.example.com/oh</code>のロングポーリングのサブプロトコル (long polling subprotocol) でHTTPを用いて、照明が過熱する<span class="mark">出来事</span>の可能性があるときに通知される<span class="mark">登録</span>を取得できる。</p>
 
