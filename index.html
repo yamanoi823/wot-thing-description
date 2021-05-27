@@ -1124,7 +1124,7 @@
         <li class="tocline"><a class="tocxref" href="#multilanguage"><bdi class="secno">5.3.1.7</bdi> <code>MultiLanguage</code> (多言語) </a></li>
       </ol>
       </li>
-      <li class="tocline"><a class="tocxref" href="#sec-data-schema-vocabulary-definition"><bdi class="secno">5.3.2</bdi> <span class="mark">Data Schema</span>語彙の定義</a>
+      <li class="tocline"><a class="tocxref" href="#sec-data-schema-vocabulary-definition"><bdi class="secno">5.3.2</bdi> <span class="mark">データスキーマ</span>語彙の定義</a>
       <ol class="toc">
         <li class="tocline"><a class="tocxref" href="#dataschema"><bdi class="secno">5.3.2.1</bdi> <code>DataSchema</code></a></li>
         <li class="tocline"><a class="tocxref" href="#arrayschema"><bdi class="secno">5.3.2.2</bdi> <code>ArraySchema</code> (配列スキーマ) </a></li>
@@ -1175,7 +1175,7 @@
       <li class="tocline"><a class="tocxref" href="#event-serialization-json"><bdi class="secno">6.3.7</bdi> <code>events</code> (イベント) </a></li>
       <li class="tocline"><a class="tocxref" href="#link-serialization-json"><bdi class="secno">6.3.8</bdi> <code>links</code> (リンク) </a></li>
       <li class="tocline"><a class="tocxref" href="#form-serialization-json"><bdi class="secno">6.3.9</bdi> <code>forms</code> (フォーム) </a></li>
-      <li class="tocline"><a class="tocxref" href="#data-schema-serialization-json"><bdi class="secno">6.3.10</bdi> <span class="mark">Data Schema</span></a></li>
+      <li class="tocline"><a class="tocxref" href="#data-schema-serialization-json"><bdi class="secno">6.3.10</bdi> <span class="mark">データスキーマ</span></a></li>
     </ol>
     </li>
     <li class="tocline"><a class="tocxref" href="#identification"><bdi class="secno">6.4</bdi> 識別</a></li>
@@ -1191,7 +1191,7 @@
   <li class="tocline"><a class="tocxref" href="#behavior"><bdi class="secno">8.</bdi> 動作の言明</a>
   <ol class="toc">
     <li class="tocline"><a class="tocxref" href="#behavior-security"><bdi class="secno">8.1</bdi> <span class="mark">セキュリティ構成情報</span></a></li>
-    <li class="tocline"><a class="tocxref" href="#behavior-data"><bdi class="secno">8.2</bdi> <span class="mark">Data Schema</span></a></li>
+    <li class="tocline"><a class="tocxref" href="#behavior-data"><bdi class="secno">8.2</bdi> <span class="mark">データスキーマ</span></a></li>
     <li class="tocline"><a class="tocxref" href="#protocol-bindings"><bdi class="secno">8.3</bdi> プロトコルバインディング</a>
     <ol class="toc">
       <li class="tocline"><a class="tocxref" href="#http-binding-assertions"><bdi class="secno">8.3.1</bdi> HTTPに基づくプロトコルバインディング</a></li>
@@ -1383,7 +1383,7 @@
 
 <dl>
   <dt><dfn id="dfn-context-ext" data-dfn-type="dfn" data-plurals="td context extensions">TDコンテキスト拡張</dfn> (TD Context Extension)</dt>
-  <dd><a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>の追加により、<a href="#dfn-thing-description" class="internalDFN" data-link-type="dfn"><span class="mark">Thing Description</span></a>を拡張するメカニズム。これは、プロトコルバインディング、セキュリティスキーム、<span class="mark">Data Schema</span>などのコアなメカニズムに対するセマンティックアノテーションと拡張の基礎である。</dd>
+  <dd><a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>の追加により、<a href="#dfn-thing-description" class="internalDFN" data-link-type="dfn"><span class="mark">Thing Description</span></a>を拡張するメカニズム。これは、プロトコルバインディング、セキュリティスキーム、<span class="mark">データスキーマ</span>などのコアなメカニズムに対するセマンティックアノテーションと拡張の基礎である。</dd>
   <dt><dfn id="dfn-inf-model" data-dfn-type="dfn">TD情報モデル</dfn> (TD Information Model)</dt>
   <dd>制約が適用される定義済み<a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>で構築される<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>定義の集合。したがって、その<a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>のセマンティクスを定義する。クラス定義は通常、<a href="#dfn-signature" class="internalDFN" data-link-type="dfn">シグネチャ</a> (一組の<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>) と、その<a href="#dfn-signature" class="internalDFN" data-link-type="dfn">シグネチャ</a>に関する関数群で表現される。<a href="#dfn-inf-model" class="internalDFN" data-link-type="dfn">TD情報モデル</a>には、<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>に関するグローバル関数として定義されている<a href="#dfn-default-value" class="internalDFN" data-link-type="dfn">デフォルト値</a>も含まれている。</dd>
   <dt><dfn id="dfn-td-processor" data-dfn-type="dfn" data-plurals="td processors">TDプロセッサ</dfn> (TD Processor)</dt>
@@ -1424,7 +1424,7 @@
     <td><code>https://www.w3.org/2019/wot/td#</code></td>
   </tr>
   <tr>
-    <td><span class="mark">Data Schema</span></td>
+    <td><span class="mark">データスキーマ</span></td>
     <td><code>https://www.w3.org/2019/wot/json-schema#</code></td>
   </tr>
   <tr>
@@ -1457,7 +1457,7 @@
 
 <ul>
   <li><em>コア</em>TD <a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>。<a href="#dfn-property" class="internalDFN" data-link-type="dfn"><span class="mark">Property</span></a>、<a href="#dfn-action" class="internalDFN" data-link-type="dfn"><span class="mark">Action</span></a>、<a href="#dfn-event" class="internalDFN" data-link-type="dfn"><span class="mark">Event</span></a>の<a href="#dfn-interaction-affordance" class="internalDFN" data-link-type="dfn"><span class="mark">相互作用のアフォーダンス</span></a>の<a href="#dfn-interaction-model" class="internalDFN" data-link-type="dfn"><span class="mark">相互作用モデル</span></a>を反映する [<cite><a class="bibref" data-link-type="biblio" href="#bib-wot-architecture" title="Web of Things (WoT) Architecture">WOT-ARCHITECTURE</a></cite>] 。</li>
-  <li><em><span class="mark">Data Schema</span></em><a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>。JSONスキーマ [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-schema" title="JSON Schema Validation: A Vocabulary for Structural Validation of JSON">JSON-SCHEMA</a></cite>] で定義されている用語 (のサブセット) を含む。</li>
+  <li><em><span class="mark">データスキーマ</span></em><a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>。JSONスキーマ [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-schema" title="JSON Schema Validation: A Vocabulary for Structural Validation of JSON">JSON-SCHEMA</a></cite>] で定義されている用語 (のサブセット) を含む。</li>
   <li><em>WoTセキュリティ</em><a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>。セキュリティメカニズムとその<span class="mark">構成</span>要件を識別する。</li>
   <li><em>ハイパーメディア制御</em><a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>。ウェブリンクとフォームを用いたRESTfulな通信の主要な原則をエンコードする。</li>
 </ul>
@@ -1538,7 +1538,7 @@
 
 <h3 id="x5-3-class-definitions"><bdi class="secno">5.3</bdi> クラスの定義<a class="self-link" aria-label="§" href="#class-definitions"></a></h3>
 
-<p><span class="rfc2119-assertion" id="td-processor"><a href="#dfn-td-processor" class="internalDFN" data-link-type="dfn">TDプロセッサ</a>は、<a href="#sec-core-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.1</bdi> コア語彙の定義</a>、<a href="#sec-data-schema-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.2</bdi> <span class="mark">Data Schema</span>語彙の定義</a>、<a href="#sec-security-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.3</bdi> セキュリティ語彙の定義</a>、および<a href="#sec-hypermedia-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.4</bdi> ハイパーメディア制御語彙の定義</a>で定義しているすべての<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>の<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>インスタンス化の制約を満たさなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
+<p><span class="rfc2119-assertion" id="td-processor"><a href="#dfn-td-processor" class="internalDFN" data-link-type="dfn">TDプロセッサ</a>は、<a href="#sec-core-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.1</bdi> コア語彙の定義</a>、<a href="#sec-data-schema-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.2</bdi> <span class="mark">データスキーマ</span>語彙の定義</a>、<a href="#sec-security-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.3</bdi> セキュリティ語彙の定義</a>、および<a href="#sec-hypermedia-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.4</bdi> ハイパーメディア制御語彙の定義</a>で定義しているすべての<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>の<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>インスタンス化の制約を満たさなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
 <section id="sec-core-vocabulary-definition">
 
@@ -1934,7 +1934,7 @@
 </section>
 <section id="sec-data-schema-vocabulary-definition">
 
-<h4 id="x5-3-2-data-schema-vocabulary-definitions"><bdi class="secno">5.3.2</bdi> <span class="mark">Data Schema</span>語彙の定義<a class="self-link" aria-label="§" href="#sec-data-schema-vocabulary-definition"></a></h4>
+<h4 id="x5-3-2-data-schema-vocabulary-definitions"><bdi class="secno">5.3.2</bdi> <span class="mark">データスキーマ</span>語彙の定義<a class="self-link" aria-label="§" href="#sec-data-schema-vocabulary-definition"></a></h4>
 
 <p>データスキーマ語彙定義は、JSONスキーマ [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-schema" title="JSON Schema Validation: A Vocabulary for Structural Validation of JSON">JSON-SCHEMA</a></cite>] で定義されている用語の非常に一般的なサブセットを反映したものである。<span class="mark">Thing Description</span>のインスタンス内のデータスキーマ定義はこの定義済みのサブセットに限定されず、<a href="#sec-context-extensions" class="sec-ref">§&nbsp;<bdi class="secno">7.</bdi> TDコンテキスト拡張</a>で記述しているとおり、追加の用語に<a href="#dfn-context-ext" class="internalDFN" data-link-type="dfn">TDコンテンツ拡張</a>を用いて、JSONスキーマにある追加の用語を使用でき、そうでない場合は、これらの用語は、<a href="#dfn-td-processor" class="internalDFN" data-link-type="dfn">TDプロセッサ</a>によってセマンティック的に無視されることに注意が必要である。 (セマンティックな処理の詳細に関しては、<a href="#json-ld-ctx-usage" class="sec-ref">§&nbsp;<bdi class="secno">D.</bdi> JSON-LDコンテキストの使用法</a>や、<a href="https://www.w3.org/2019/wot/td">https://www.w3.org/2019/wot/td</a>などの名前空間IRI下のドキュメントを参照)。</p>
 
@@ -3349,7 +3349,7 @@
 
 <p><code>Thing</code>のインスタンスの<code>properties</code>に割り当てられる値は、<code>PropertyAffordance</code>のインスタンスの<a href="#dfn-map" class="internalDFN" data-link-type="dfn">マップ</a>である。<span class="rfc2119-assertion" id="td-properties"><code>PropertyAffordance</code>インスタンスの<a href="#dfn-map" class="internalDFN" data-link-type="dfn">マップ</a>のすべての名前-値のペアは、<a href="#dfn-map" class="internalDFN" data-link-type="dfn">マップ</a>の<span class="mark">シリアライズ</span>から生じるJSONオブジェクトのメンバーとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。ペアの名前はJSON文字列として<span class="mark">シリアライズ</span>しなければならず (<em class="rfc2119" title="MUST">MUST</em>)、ペアの値 (<code>PropertyAffordance</code>のインスタンス) はJSONオブジェクトとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
-<p><span class="rfc2119-assertion" id="td-property-names"><code>PropertyAffordance</code>のインスタンスのすべての名前-値のペアは、名前が<code>PropertyAffordance</code>、<code>InteractionAffordance</code>、または<code>DataSchema</code>の<a href="#dfn-signature" class="internalDFN" data-link-type="dfn">シグネチャ</a> (の一つ) に含まれている<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>である場合、<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>を名前として用いて、<code>PropertyAffordance</code>インスタンスの<span class="mark">シリアライズ</span>から生じるJSONオブジェクトのメンバーとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a>インスタンスの<span class="mark">シリアライズ</span>の詳細に関しては、<a href="#data-schema-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.10</bdi> <span class="mark">Data Schema</span></a>を参照していただきたい。</p>
+<p><span class="rfc2119-assertion" id="td-property-names"><code>PropertyAffordance</code>のインスタンスのすべての名前-値のペアは、名前が<code>PropertyAffordance</code>、<code>InteractionAffordance</code>、または<code>DataSchema</code>の<a href="#dfn-signature" class="internalDFN" data-link-type="dfn">シグネチャ</a> (の一つ) に含まれている<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>である場合、<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>を名前として用いて、<code>PropertyAffordance</code>インスタンスの<span class="mark">シリアライズ</span>から生じるJSONオブジェクトのメンバーとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a>インスタンスの<span class="mark">シリアライズ</span>の詳細に関しては、<a href="#data-schema-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.10</bdi> <span class="mark">データスキーマ</span></a>を参照していただきたい。</p>
 
 <p><span class="rfc2119-assertion" id="td-property-arrays"><code>PropertyAffordance</code>のインスタンスの<code>forms</code>に割り当てられている値は、<a href="#form-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.9</bdi> <code>forms</code> (フォーム) </a>で定義している一つ以上のJSONオブジェクトの<span class="mark">シリアライゼーション</span>を含むJSON配列として<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
@@ -3397,7 +3397,7 @@
 
 <p><span class="rfc2119-assertion" id="td-action-names"><code>ActionAffordance</code>のインスタンスのすべての名前-値のペアは、名前が<code>ActionAffordance</code>または<code>InteractionAffordance</code>の<a href="#dfn-signature" class="internalDFN" data-link-type="dfn">シグネチャ</a> (の一つ) に含まれている<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>である場合、<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>を名前として用いて、<code>ActionAffordance</code>インスタンスの<span class="mark">シリアライズ</span>から生じるJSONオブジェクトのメンバーとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
-<p><span class="rfc2119-assertion" id="td-action-objects"><code>ActionAffordance</code>のインスタンス内で<code>input</code>および<code>output</code>に割り当てられている値は、JSONオブジェクトとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span>それらは、<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a>に依拠しており、その<span class="mark">シリアライゼーション</span>は<a href="#data-schema-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.10</bdi> <span class="mark">Data Schema</span></a>で定義している。</p>
+<p><span class="rfc2119-assertion" id="td-action-objects"><code>ActionAffordance</code>のインスタンス内で<code>input</code>および<code>output</code>に割り当てられている値は、JSONオブジェクトとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span>それらは、<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a>に依拠しており、その<span class="mark">シリアライゼーション</span>は<a href="#data-schema-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.10</bdi> <span class="mark">データスキーマ</span></a>で定義している。</p>
 
 <p><span class="rfc2119-assertion" id="td-action-arrays"><code>ActionAffordance</code>のインスタンス内の<code>forms</code>に割り当てられている値は、<a href="#form-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.9</bdi> <code>forms</code> (フォーム) </a>で定義している一つ以上のJSONオブジェクトの<span class="mark">シリアライゼーション</span>を含むJSON配列として<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
@@ -3442,7 +3442,7 @@
 
 <p><span class="rfc2119-assertion" id="td-event-names"><code>EventAffordance</code>のインスタンスのすべての名前-値のペアは、名前が<code>EventAffordance</code>または<code>InteractionAffordance</code>の<a href="#dfn-signature" class="internalDFN" data-link-type="dfn">シグネチャ</a> (の一つ) に含まれている<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>である場合、<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>を名前として用いて、<code>EventAffordance</code>インスタンスの<span class="mark">シリアライズ</span>から生じるJSONオブジェクトのメンバーとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
-<p><span class="rfc2119-assertion" id="td-event-objects"><code>EventAffordance</code>のインスタンス内で<code>subscription</code>、<code>data</code>、そして<code>cancellation</code>に割り当てられている値は、JSONオブジェクトとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span>それらは、<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a>に依拠しており、その<span class="mark">シリアライゼーション</span>は<a href="#data-schema-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.10</bdi> <span class="mark">Data Schema</span></a>で定義している。</p>
+<p><span class="rfc2119-assertion" id="td-event-objects"><code>EventAffordance</code>のインスタンス内で<code>subscription</code>、<code>data</code>、そして<code>cancellation</code>に割り当てられている値は、JSONオブジェクトとして<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span>それらは、<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a>に依拠しており、その<span class="mark">シリアライゼーション</span>は<a href="#data-schema-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.10</bdi> <span class="mark">データスキーマ</span></a>で定義している。</p>
 
 <p><span class="rfc2119-assertion" id="td-event-arrays"><code>EventAffordance</code>のインスタンス内の<code>forms</code>に割り当てられている値は、<a href="#form-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.9</bdi> <code>forms</code> (フォーム) </a>で定義している一つ以上のJSONオブジェクトの<span class="mark">シリアライゼーション</span>を含むJSON配列として<span class="mark">シリアライズ</span>しなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
@@ -3510,7 +3510,7 @@
 
 <p><span class="rfc2119-assertion" id="td-uriVariables-names">このようなケースでは、URIテンプレート変数は、関連する (一意な) 変数名をJSON名として持つJSONオブジェクトベースの<code>uriVariables</code>メンバーで収集されなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
-<p><span class="rfc2119-assertion" id="td-uriVariables-dataschema"><code>Form</code>のインスタンス内の<code>uriVariables</code>に割り当てられているマップの各値の<span class="mark">シリアライゼーション</span>は、<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a>に依拠しなければならず (<em class="rfc2119" title="MUST">MUST</em>)、その<span class="mark">シリアライゼーション</span>は<a href="#data-schema-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.10</bdi> <span class="mark">Data Schema</span></a>で定義している。</span></p>
+<p><span class="rfc2119-assertion" id="td-uriVariables-dataschema"><code>Form</code>のインスタンス内の<code>uriVariables</code>に割り当てられているマップの各値の<span class="mark">シリアライゼーション</span>は、<a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a>に依拠しなければならず (<em class="rfc2119" title="MUST">MUST</em>)、その<span class="mark">シリアライゼーション</span>は<a href="#data-schema-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.10</bdi> <span class="mark">データスキーマ</span></a>で定義している。</span></p>
 
 <p>URIテンプレートと<code>uriVariables</code>を用いたTDの断片を以下に示す。</p>
 
@@ -3616,7 +3616,7 @@
 </section>
 <section id="data-schema-serialization-json">
 
-<h4 id="x6-3-10-data-schemas"><bdi class="secno">6.3.10</bdi> <span class="mark">Data Schema</span><a class="self-link" aria-label="§" href="#data-schema-serialization-json"></a></h4>
+<h4 id="x6-3-10-data-schemas"><bdi class="secno">6.3.10</bdi> <span class="mark">データスキーマ</span><a class="self-link" aria-label="§" href="#data-schema-serialization-json"></a></h4>
 
 <p><a href="#dataschema" class="sec-ref"><code>DataSchema</code></a><a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>を通じて定義される<span class="mark">WoT Thing Description</span>のデータスキーマは、JSONスキーマ用語 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-schema" title="JSON Schema Validation: A Vocabulary for Structural Validation of JSON">JSON-SCHEMA</a></cite>] のサブセットに基づいている。したがって、TDデータスキーマの<span class="mark">シリアライゼーション</span>をJSONスキーマ検証ソフトの実装に直接フィードして、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>と交換されるデータを検証できる。</p>
 
@@ -3941,7 +3941,7 @@
 </section>
 <section id="behavior-data">
 
-<h3 id="x8-2-data-schemas"><bdi class="secno">8.2</bdi> <span class="mark">Data Schema</span><a class="self-link" aria-label="§" href="#behavior-data"></a></h3>
+<h3 id="x8-2-data-schemas"><bdi class="secno">8.2</bdi> <span class="mark">データスキーマ</span><a class="self-link" aria-label="§" href="#behavior-data"></a></h3>
 
 <p>TDで提供されるデータスキーマは、TDで指定されている相互作用で記述されている<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>によって返され、受け入れられるデータペイロードを正確に表すべきである。一般的に、<a href="#dfn-consumer" class="internalDFN" data-link-type="dfn"><span class="mark">Consumer</span></a>は<span class="mark">WoT Thing Description</span>で示されていないものは生成せず、データスキーマに厳密に従うべきだが、<span class="mark">WoT Thing Description</span>で明示的に指定されていない<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>からの追加データは受け入れるべきである。一般的に、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>は<span class="mark">WoT Thing Description</span>によって<em>記述</em>されるが、<a href="#dfn-consumer" class="internalDFN" data-link-type="dfn"><span class="mark">Consumer</span></a>は<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>と相互作用するときに<span class="mark">WoT Thing Description</span>に従うように<em>制約</em>される。</p>
 
@@ -5714,7 +5714,7 @@
 
 <ul>
   <li>リスクのある機能としていた、<code>CertSecurityScheme</code>、<code>PublicSecurityScheme</code>、<code>PoPSecurityScheme</code>、および<a href="#oauth2securityscheme"><code>OAuth2SecurityScheme</code></a>の<code>implicit</code>、<code>password</code>、<code>client</code>のフローを削除した。</li>
-  <li><a href="#sec-data-schema-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.2</bdi> <span class="mark">Data Schema</span>語彙の定義</a>の項で、データスキーマとコンテンツタイプの関係を明確化した。</li>
+  <li><a href="#sec-data-schema-vocabulary-definition" class="sec-ref">§&nbsp;<bdi class="secno">5.3.2</bdi> <span class="mark">データスキーマ</span>語彙の定義</a>の項で、データスキーマとコンテンツタイプの関係を明確化した。</li>
   <li><a href="#form-serialization-json" class="sec-ref">§&nbsp;<bdi class="secno">6.3.9</bdi> <code>forms</code> (フォーム) </a>の項で、操作型である<code>writemultipleproperties</code>、<code>readmultipleproperties</code>、<code>readallproperties</code>に対する<a href="#dfn-consumer" class="internalDFN" data-link-type="dfn"><span class="mark">Consumer</span></a>と<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>の予期に関して明確化した。</li>
   <li><a href="#http-binding-assertions" class="sec-ref">§&nbsp;<bdi class="secno">8.3.1</bdi> HTTPに基づくプロトコルバインディング</a>の項で、デフォルト値の<code>GET</code>または<code>PUT</code>が語彙用語である<code>htv:methodName</code>に用いられるコンテキストを明確化した。</li>
   <li>付録<a href="#myLightSensor-example-serialization" class="sec-ref">§&nbsp;<bdi class="secno">A.2</bdi> MQTTプロトコルバインディングを用いたMyIlluminanceSensorの例</a>の項の<span class="mark">Thing Description</span>の例を改善し、MQTTを用いたより良い例を作成した。</li>
