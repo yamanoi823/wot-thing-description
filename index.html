@@ -1438,9 +1438,9 @@
 </tbody>
 </table>
 
-<p><a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>は互いに独立している。これらは、他の<abbr title="World Wide Web Consortium">W3C</abbr>仕様で再利用したり、拡張したりすることができる。<a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>の設計に互換性のない (breaking) 変更を加えるたびに、年ベースの新しい名前空間URIの割り当てが必要になる。<a href="#dfn-inf-model" class="internalDFN" data-link-type="dfn">TD情報モデル</a>の全般的な一貫性を維持するために、互換性のある (non-breaking) 変更 (特に新しい<a href="#dfn-term" class="internalDFN" data-link-type="dfn">用語</a>の追加) も識別するように、関連するJSON-LDコンテキストファイルは、すべてのバージョンが独自のURI (<code>v1</code>、<code>v1.1</code>、<code>v2</code>、...) を持つようにバージョン付けされていることに注意していただきたい。</p>
+<p>上記の<a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>は互いに独立している。これらは、他の<abbr title="World Wide Web Consortium">W3C</abbr>仕様で再利用したり、拡張したりすることができる。<a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>の設計に互換性のない (breaking) 変更を加えるたびに、年ベースの新しい名前空間URIの割り当てが必要になる。<a href="#dfn-inf-model" class="internalDFN" data-link-type="dfn">TD情報モデル</a>の全般的な一貫性を維持するために、互換性のある (non-breaking) 変更 (特に新しい<a href="#dfn-term" class="internalDFN" data-link-type="dfn">用語</a>の追加) も識別できるように、関連するJSON-LDコンテキストファイルは、すべてのバージョンが独自のURI (<code>v1</code>、<code>v1.1</code>、<code>v2</code>、...) を持つようにバージョン付けされていることに注意していただきたい。</p>
 
-<p>ある名前空間IRI下の<a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>は、互換性のある変更しか行えないため、その内容を安全にキャッシュしたりアプリケーションに埋め込んだりすることができる。名前空間IRI下で比較的静的な内容を公開する利点の一つは、制約のあるデバイス間で交換されるメッセージのペイロードサイズの最適化である。これにより、プライベートネットワークから公開されている語彙にアクセスするデバイスに起因するプライバシーの漏えいも回避される (<a href="#sec-security-consideration-context" class="sec-ref">§&nbsp;<bdi class="secno">9.1</bdi> プライバシーのリスクを逆参照するコンテキスト</a>も参照)。</p>
+<p>ある名前空間IRI下の<a href="#dfn-vocab" class="internalDFN" data-link-type="dfn">語彙</a>は、互換性のある変更しか行えないため、その内容を安全にキャッシュしたりアプリケーションに埋め込んだりすることができる。名前空間IRI下で比較的静的な内容を公開する利点の一つは、制約のあるデバイス間で交換されるメッセージのペイロードサイズを最適化することである。これにより、公開されている語彙に対して、プライベートネットワークからアクセスするデバイスにより引き起こされるプライバシーの漏えいも回避される (<a href="#sec-security-consideration-context" class="sec-ref">§&nbsp;<bdi class="secno">9.1</bdi> プライバシーのリスクを逆参照するコンテキスト</a>も参照)。</p>
 
 </section>
 <section id="sec-vocabulary-definition" class="normative">
