@@ -1306,7 +1306,8 @@
 
 <p>同様に、<code>https://mylamp.example.com/toggle</code>というリソースでPOSTメソッドを用いてスイッチの状態を切り替える<a href="#actionaffordance"><span class="mark">Actionの</span>アフォーダンス</a>が指定されており、この場合も、POSTは<span class="mark">Action</span>を呼び出すためのデフォルト時の解釈である。</p>
 
-<p><a href="#eventaffordance"><span class="mark">Eventの</span>アフォーダンス</a>により、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>が非同期メッセージを送信するメカニズムが有効になる。ここでは、<code>https://mylamp.example.com/oh</code>のロングポーリングのサブプロトコル (long polling subprotocol) でHTTPを用いて、照明が過熱する<span class="mark">出来事</span>の可能性があるときに通知される<span class="mark">登録</span>を取得できる。</p>
+<p><a href="#eventaffordance"><span class="mark">Eventの</span>アフォーダンス</a>により、<a href="#dfn-thing" class="internalDFN" data-link-type="dfn"><span class="mark">Thing</span></a>が非同期メッセージを送信するメカニズムが有効になる。
+  ここでは、<code>https://mylamp.example.com/oh</code>に対するロングポーリングサブプロトコル (long polling subprotocol) とともにHTTPを用いることにより、発生する可能性のある、照明の過熱という<span class="mark">イベント</span>が発生したときの通知を受け取るよう<span class="mark">登録</span>できる@@@。</p>
 
 <p>この例では、アクセスにユーザ名とパスワードを求める<code>basic</code>なセキュリティスキームも指定している。セキュリティスキームは、まず<code>securityDefinitions</code>で名前が与えられ、次に<code>security</code>の部分でその名前を指定することでアクティブ化されることに注意していただきたい。この例では、HTTPプロトコルの使用と組み合わせて、HTTP基本認証の使用方法を示している。少なくとも一つのセキュリティスキームを最上位レベルで指定することは必須であり、それが、すべてのリソースに対するデフォルトのアクセス要件となる。しかし、セキュリティスキームはフォームごとに指定することもできる。フォームのレベルで指定した<span class="mark">構成</span>は、<code>Thing</code>レベルで指定した<span class="mark">構成</span>を上書きするため、きめ細かいアクセス制御の指定が可能である。<code>nosec</code>という特殊なセキュリティスキームを用いて、アクセス制御メカニズムが用いられていないことを示すこともできる。後ほど、追加の例を示す。</p>
 
@@ -1356,7 +1357,7 @@
 }</code></pre>
 </aside>
 
-<p>一部の<code>@context</code>内の宣言メカニズムは、JSON-LDで指定される。TDインスタンスは、その仕様のバージョン1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>] に準拠している。したがって、TDインスタンスはRDFドキュメントとして処理することもできる (セマンティックな処理の詳細に関しては、付録<a href="#json-ld-ctx-usage" class="sec-ref">§&nbsp;<bdi class="secno">D.</bdi> SON-LDコンテキストの使用法</a>や<a href="https://www.w3.org/2019/wot/td">https://www.w3.org/2019/wot/td</a>などの名前空間IRI下のドキュメントを参照)。</p>
+<p><code>@context</code>内の宣言メカニズムは、JSON-LDで指定される。TDインスタンスは、その仕様のバージョン1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>] に準拠している。したがって、TDインスタンスはRDFドキュメントとして処理することもできる (セマンティックな処理の詳細に関しては、付録<a href="#json-ld-ctx-usage" class="sec-ref">§&nbsp;<bdi class="secno">D.</bdi> SON-LDコンテキストの使用法</a>や<a href="https://www.w3.org/2019/wot/td">https://www.w3.org/2019/wot/td</a>などの名前空間IRI下のドキュメントを参照)。</p>
 
 </section>
 <section id="conformance">
